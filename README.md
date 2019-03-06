@@ -1,5 +1,5 @@
 Description
-========
+--------
 Basic REST API service based on aiohttp.
 
 
@@ -34,9 +34,7 @@ Notes
 
 To validate everything is running correctly, we will check the version
 
-First get your docker host machine ip, on mac this is probably found using
-one of these commands `docker-machine ip` or `dlite ip`.  Then run the
-following command substituting your ip for the `<docker_host>`
+First get your docker host machine ip, on mac this is probably found using one of these commands `docker-machine ip` or `dlite ip`.  Then run the following command substituting your ip for the `<docker_host>`
 
 ```
 curl -H "Authorization: abc123" http://<docker_host>:8080/version

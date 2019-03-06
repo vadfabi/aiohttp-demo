@@ -1,0 +1,20 @@
+version: "2"
+services:
+  web:
+    image: aiodemo:latest
+    volumes:
+      - .:/src
+    expose:
+      - "8080"
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    links:
+      - db:db.aiodemo.com
+    command: python -m demo
+
+  db:
+    image: aiodemodb:latest
+    expose:
+      - "5432"

@@ -1,0 +1,8 @@
+aiohttp==0.22.5
+aiohttp-utils==2.0.1
+asyncpg==0.5.3
+cchardet==1.0.0
+ujson==1.35
+uvloop==0.5.2
+schematics==2.0.0a1
+
